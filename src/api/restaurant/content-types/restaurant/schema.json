@@ -4,7 +4,8 @@
   "info": {
     "singularName": "restaurant",
     "pluralName": "restaurants",
-    "displayName": "Restaurant"
+    "displayName": "Restaurant",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,14 +21,15 @@
       "type": "richtext"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "openingHours": {
       "displayName": "openingHours",
@@ -40,6 +42,9 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "restaurants"
+    },
+    "avgPrice": {
+      "type": "decimal"
     }
   }
 }

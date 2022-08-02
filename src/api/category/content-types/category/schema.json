@@ -19,7 +19,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::restaurant.restaurant",
-      "inversedBy": "categories"
+      "mappedBy": "categories"
     }
   }
 }
